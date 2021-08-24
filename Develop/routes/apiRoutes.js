@@ -18,6 +18,5 @@ module.exports = (app) => {
         notesList.push(newNote);
         fs.writeFileSync('./db/db.json', JSON.stringify(notesList));
         res.json(newNote);
-
     });
 }
